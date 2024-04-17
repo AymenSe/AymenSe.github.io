@@ -1,7 +1,7 @@
 
 # Academic Pages
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+![pages-build-deployment](https://github.com/aymense/aymense.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
 
 Academic Pages is a Github Pages template for academic websites.
 
@@ -16,7 +16,7 @@ Academic Pages is a Github Pages template for academic websites.
 1. Check status by going to the repository settings, in the "GitHub pages" section
 1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
-See more info at https://academicpages.github.io/
+See more info at https://aymense.github.io/
 
 ## Running Locally
 
@@ -30,7 +30,7 @@ When you are initially working your website, it is very useful to be able to pre
 
 # Maintenance 
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/aymense/aymense.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/aymense/aymense.github.io/discussions).
 
 This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
 
