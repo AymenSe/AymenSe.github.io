@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Aymen SEKHRI Space"
+title                    : "Aymen's AI-Space"
 title_separator          : "-"
 name                     : &name "Aymen SEKHRI"
 description              : &description "personal description"
@@ -25,10 +25,10 @@ author:
   name             : "Aymen SEKHRI"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in the field of AI"
-  location         : "Poitiers, France"
-  employer         : "University of Poitiers"
-  uri              : # URL
-  email            : "aymen.sekhri@univ-poitiers.fr" 
+  location         : "Poitiers, France" # example: "Gjøvik, Norway"
+  employer         : "University of Poitiers" # example: "Norwegian University of Science and Technology"
+  uri              : "asekhri.me"
+  email            : "aymen.sekhri@univ-poitiers.fr"  # example: "aymens@ntnu.no"
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=n70fgO4AAAAJ"
