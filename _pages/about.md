@@ -13,4 +13,4 @@ redirect_from:
 
 💡 In addition to this, I’m also working on applying cutting-edge AI models to tackle challenges in medical imaging. 🏥 I’m deeply interested in the development of new algorithms tailored for AI startups, aiming to push the boundaries of what’s possible in this exciting space.
 
-Let’s connect and explore the future of AI together! 🌍🚀
+Let’s explore the future of AI together! 🌍🚀
