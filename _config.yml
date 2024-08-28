@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Aymen SEKHRI"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Student in the field of AI"
+  bio              : "PhD student in Machine Learning"
   location         : "Poitiers, France" # example: "Gjøvik, Norway"
   employer         : "University of Poitiers" # example: "Norwegian University of Science and Technology"
-  uri              : "asekhri.me"
+  uri              : # example: "https://www.ntnu.edu/employees/aymens"
   email            : "aymen.sekhri@univ-poitiers.fr"  # example: "aymens@ntnu.no"
 
   # Academic websites
