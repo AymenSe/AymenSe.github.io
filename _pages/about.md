@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hi there! I'm **Aymen** from Algeria 🇩🇿, a PhD student in machine learning, currently studying at both the [University of Poitiers](https://www.univ-poitiers.fr/) in France 🇫🇷 and the [Norwegian University of Science and Technology](https://www.ntnu.edu/gjovik) in Norway 🇳🇴. I’m fortunate to be co-advised by [Mohamed-Chaker LARABI](https://xlim-sic.labo.univ-poitiers.fr/larabi/) and [Seyed Ali Amirshahi](https://www.ntnu.edu/employees/s.ali.amirshahi), with partial funding from the Nouvelle-Aquitaine Research Council under the [REALISME]() project.
+👋 Hi there! I'm **Aymen** from Algeria 🇩🇿, a PhD student in machine learning, currently studying at both the <a href="https://www.univ-poitiers.fr/" style="color: orange; text-decoration: none;">University of Poitiers</a> in France 🇫🇷 and the <a href="https://www.ntnu.edu/gjovik" style="color: orange; text-decoration: none;">Norwegian University of Science and Technology</a> in Norway 🇳🇴. I’m fortunate to be co-advised by <a href="https://xlim-sic.labo.univ-poitiers.fr/larabi/" style="color: orange; text-decoration: none;">Mohamed-Chaker LARABI</a> and <a href="https://www.ntnu.edu/employees/s.ali.amirshahi" style="color: orange; text-decoration: none;">Seyed Ali Amirshahi</a>, with partial funding from the Nouvelle-Aquitaine Research Council under the <a href="#" style="color: orange; text-decoration: none;">REALISME</a> project.
 
 🔍 My research interests lie in the fascinating fields of machine learning, computer vision, and deep learning. I'm especially passionate about developing innovative algorithms for image processing and exploring their applications in Quality Assessment for Augmented Reality. 🖼️
 
