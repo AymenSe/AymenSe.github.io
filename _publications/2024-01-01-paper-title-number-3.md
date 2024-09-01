@@ -1,7 +1,7 @@
 ---
 title: "Do digital images tell the truth?"
 collection: publications
-date: 2024
+date: 2024-01-01
 venue: 'Digital Image Security'
 paperurl: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003468974-12 digital-images-tell-truth-bruno-oza-adedoyin-tliba-kerkouri-sekhri-chetouani-gao'
 ---
