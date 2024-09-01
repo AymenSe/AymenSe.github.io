@@ -2,7 +2,7 @@
 title: "Deep-based quality assessment of medical images through domain adaptation"
 collection: publications
 date: 2022-10-19
-venue: 'ICIP 2022'
+venue: '2022 IEEE International Conference on Image Processing (ICIP)'
 paperurl: 'http://aymense.github.io/files/paper1.pdf'
 ---
 
