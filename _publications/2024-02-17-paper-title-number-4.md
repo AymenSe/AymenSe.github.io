@@ -1,9 +1,11 @@
 ---
-title: "Shifting Focus: From Global Semantics to Local Prominent Features in Swin-Transformer for Knee Osteoarthritis Severity Assessment"
+title: "Shifting Focus: From Global Semantics to Local Prominent Features in Swin Transformers for Knee Osteoarthritis Severity Assessment"
 collection: publications
 date: 2024-03-15
-venue: '32nd European Signal Processing Conference EUSIPCO 2024'
+venue: '32nd European Signal Processing Conference (EUSIPCO 2024)'
 paperurl: 'http://aymense.github.io/files/paper3.pdf'
 ---
 
-Conventional imaging diagnostics frequently encounter bottlenecks due to manual inspection, which can lead to delays and inconsistencies. Although deep learning offers a pathway to au tomation and enhanced accuracy, foundational models in com puter vision often emphasize global context at the expense of lo cal details, which are vital for medical imaging diagnostics. To address this, we harness the Swin Transformer’s capacity to dis cern extended spatial dependencies within images through the hierarchical framework. Our novel contribution lies in refining local feature representations, orienting them specifically toward the final distribution of the classifier. This method ensures that local features are not only preserved but are also enriched with task-specific information, enhancing their relevance and detail at every hierarchical level. By implementing this strategy, our model demonstrates significant robustness and precision, as ev idenced by extensive validation of two established benchmarks for Knee OsteoArthritis (KOA) grade classification. Thesere sults highlight our approach’s effectiveness and its promising implications for the future of medical imaging diagnostics. 
+Conventional imaging diagnostics frequently encounter bottlenecks due to manual inspection, which can lead to delays and inconsistencies. Although deep learning offers a pathway to automation and enhanced accuracy, foundational models in computer vision often emphasise global context at the expense of the local structures that clinicians rely on.
+
+We harness the Swin Transformer’s capacity to capture long-range spatial dependencies while refining the representation of clinically salient regions. The proposed localisation-aware refinement module aligns hierarchical transformer tokens with the final classifier distribution, ensuring that local cues remain discriminative across all scales. Extensive validation on two public benchmarks demonstrates improved robustness and precision for Kellgren–Lawrence severity prediction, underlining the method’s potential for clinical decision support.

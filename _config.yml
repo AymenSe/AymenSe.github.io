@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Aymen's AI-Space"
+title                    : "Aymen Sekhri – Machine Learning Researcher"
 title_separator          : "-"
 name                     : &name "Aymen SEKHRI"
-description              : &description "personal description"
+description              : &description "Ph.D. candidate working on machine learning for medical imaging and immersive media"
 url                      : https://aymense.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "AymenSe/aymense.github.io"
@@ -24,10 +24,10 @@ author:
   avatar           : "profile.png"
   name             : "Aymen SEKHRI"
   pronouns         : # example: "she/her"  
-  bio              : "PhD student in Machine Learning"
-  location         : "Poitiers, France" # example: "Gjøvik, Norway"
-  employer         : "University of Poitiers" # example: "Norwegian University of Science and Technology"
-  uri              : # example: "https://www.ntnu.edu/employees/aymens"
+  bio              : "Ph.D. candidate in machine learning for medical imaging and immersive media"
+  location         : "Poitiers, France & Gjøvik, Norway" # example: "Gjøvik, Norway"
+  employer         : "University of Poitiers & NTNU (cotutelle)" # example: "Norwegian University of Science and Technology"
+  uri              : "https://aymense.github.io" # example: "https://www.ntnu.edu/employees/aymens"
   email            : "aymen.sekhri@univ-poitiers.fr"  # example: "aymens@ntnu.no"
 
   # Academic websites
@@ -126,9 +126,12 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Aymen SEKHRI"
+  links:
+    - https://scholar.google.com/citations?user=n70fgO4AAAAJ
+    - https://www.researchgate.net/profile/Aymen-Sekhri
+    - https://www.linkedin.com/in/aymensekhri1/
 
 
 # Analytics

@@ -1,0 +1,35 @@
+{% assign entry = include.entry %}
+<article class="publication-card">
+  <h3 class="publication-card__title">
+    {% assign paper_link = entry.paperurl | default: entry.url %}
+    {% if paper_link %}
+      {% if paper_link contains '://' %}
+        <a href="{{ paper_link }}" rel="noopener" target="_blank">{{ entry.title }}</a>
+      {% else %}
+        <a href="{{ paper_link | relative_url }}">{{ entry.title }}</a>
+      {% endif %}
+    {% else %}
+      {{ entry.title }}
+    {% endif %}
+  </h3>
+  <p class="publication-card__meta">
+    {{ entry.date | date: "%Y" }} · {{ entry.venue }}
+  </p>
+  {% assign summary = entry.excerpt | default: entry.content %}
+  {% assign summary = summary | markdownify | strip_html | replace: "\n", " " %}
+  {% if summary %}
+    <p class="publication-card__summary">{{ summary | truncate: 220 }}</p>
+  {% endif %}
+  <p class="publication-card__links">
+    <a class="publication-card__link" href="{{ entry.url | relative_url }}">Abstract</a>
+    {% if paper_link %}
+      {% if paper_link contains '://' %}
+        <span aria-hidden="true">·</span>
+        <a class="publication-card__link" href="{{ paper_link }}" rel="noopener" target="_blank">Full text</a>
+      {% else %}
+        <span aria-hidden="true">·</span>
+        <a class="publication-card__link" href="{{ paper_link | relative_url }}">Full text</a>
+      {% endif %}
+    {% endif %}
+  </p>
+</article>

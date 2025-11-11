@@ -1,0 +1,169 @@
+.landing-hero {
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  background: lighten($info-color, 45%);
+  border-radius: $border-radius;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.landing-hero__lead {
+  font-size: $type-size-3;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: $dark-gray;
+}
+
+.landing-hero__description {
+  font-size: $type-size-5;
+  margin-bottom: 1.5rem;
+}
+
+.landing-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn--outline {
+  color: $info-color !important;
+  background: transparent;
+  border: 1px solid $info-color !important;
+
+  &:hover {
+    color: #fff !important;
+    background: $info-color;
+  }
+}
+
+.section-title {
+  font-size: $type-size-3;
+  margin-top: 0;
+}
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.publication-card {
+  padding: 1.5rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.publication-card__title {
+  font-size: $type-size-4;
+  margin-bottom: 0.35rem;
+}
+
+.publication-card__meta {
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $gray;
+  margin-bottom: 0.75rem;
+}
+
+.publication-card__summary {
+  margin-bottom: 0.75rem;
+}
+
+.publication-card__links {
+  font-size: $type-size-6;
+  color: $gray;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-card__link {
+  font-weight: 600;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: #fff;
+}
+
+.project-card__title {
+  font-size: $type-size-4;
+  margin-bottom: 0.35rem;
+}
+
+.project-card__role {
+  font-weight: 600;
+  color: $dark-gray;
+}
+
+.project-card__period {
+  font-size: $type-size-6;
+  color: $gray;
+  margin-bottom: 0.75rem;
+}
+
+.project-card__highlights {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.news-feed {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.news-feed__item {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: minmax(110px, auto) 1fr;
+  align-items: baseline;
+}
+
+.news-feed__date {
+  font-weight: 600;
+  color: $gray;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+  .landing-hero {
+    padding: 1.75rem;
+  }
+
+  .landing-hero__lead {
+    font-size: $type-size-4;
+  }
+
+  .landing-hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-feed__item {
+    grid-template-columns: 1fr;
+  }
+}
