@@ -1,0 +1,14 @@
+- title: "REALISME – Perceptual Quality for Augmented Reality"
+  role: "Doctoral researcher"
+  period: "2022 – present"
+  description: "Developing learning-based quality assessment pipelines that connect objective metrics with human perception in augmented reality scenarios."
+  highlights:
+    - "Designing subjective and objective protocols that span indoor and outdoor mixed-reality capture."
+    - "Bridging expertise from the University of Poitiers and NTNU to deliver cross-laboratory validation."
+- title: "Automated Knee Osteoarthritis Assessment"
+  role: "Lead author"
+  period: "2023 – present"
+  description: "Building transformer architectures that localise clinically salient biomarkers in radiographic images to support early-stage diagnosis."
+  highlights:
+    - "Introduced localisation-aware Swin Transformer variants for robust multi-dataset training."
+    - "Collaborating with clinical partners to align predictions with Kellgren–Lawrence grading." 

@@ -1,9 +1,11 @@
 ---
-title: "Do digital images tell the truth?"
+title: "Do Digital Images Tell the Truth?"
 collection: publications
 date: 2024-01-01
 venue: 'Digital Image Security'
-paperurl: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003468974-12 digital-images-tell-truth-bruno-oza-adedoyin-tliba-kerkouri-sekhri-chetouani-gao'
+paperurl: 'https://www.taylorfrancis.com/chapters/edit/10.1201/9781003468974-12/digital-images-tell-truth-bruno-oza-adedoyin-taliba-kerkouri-sekhri-chetouani-gao'
 ---
 
-Since the advent of digital cameras, many image editing tools have spread and allowed everyday users to modify picture content. Image filtering and retouching are broadly used to enhance color, contrast, and brightness to improve pictures’ aesthetics. Going deeper into image editing, Copy Move is considered one of the most popular alterations in the pixel domain. It consists of copying and pasting a portion of pixels onto another area in the same digital image. Having counterfeited pictures travel all over the Internet is pretty usual nowadays. However, spotting Copy Move is not straightforward to human eyes, as editing tools have achieved such high accuracy and detail. That is often used for two reasons: fun or criminal purposes. The former represents a way to hide or add multiple copies of an object, a face, or whatever lets users have fun. In that case, the latter undermines the trustworthiness of digital images as proof of something taken from a visual scene. This chapter surveys this field’s SOTA (state-of-the-art) methods by accounting for image features, approaches, and datasets used for experimental campaigns. In particular, low-level image processing, machine learning, and deep learning methods have been analyzed and compared against some publicly available datasets, including different tampering transformations, such as translation, rotation, and scaling. Finally, some considerations are discussed on the pros and cons of SOTA methods.
+Since the advent of digital cameras, image editing tools have made it straightforward to manipulate content. Copy-move forgeries—where a region is duplicated and pasted within the same frame—are particularly challenging for human observers to detect, yet they threaten the credibility of visual evidence.
+
+This book chapter surveys the state of the art in copy-move detection by analysing feature representations, learning strategies, and publicly available datasets. We catalogue low-level descriptors, machine learning pipelines, and deep architectures, and we discuss how each approach responds to common post-processing operations such as translation, rotation, and scaling. The chapter concludes with open challenges for building explainable and trustworthy forensic systems.
