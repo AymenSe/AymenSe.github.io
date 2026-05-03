@@ -11,27 +11,23 @@ redirect_from:
 
 ## Profile
 
-Doctoral researcher focusing on machine learning for perceptual quality assessment and medical image analysis. I work across the University of Poitiers (France) and the Norwegian University of Science and Technology (Norway) to design computer vision systems that align quantitative metrics with human visual perception.
+Ph.D. researcher in machine learning and computer vision, working in cotutelle between the University of Poitiers and NTNU. My work focuses on perceptual quality assessment for augmented reality and trustworthy AI models for medical imaging.
 
 ## Education
 
-* **Ph.D. in Machine Learning (cotutelle)** — University of Poitiers & NTNU, 2022 – present  
-  Advisors: Mohamed-Chaker Larabi & Seyed Ali Amirshahi · Thesis focus on perceptual quality for immersive media and diagnostic imaging.
-* **Graduate studies in Computer Science** — Algeria, 2018 – 2022  
-  Coursework and research centred on computer vision, signal processing, and applied machine learning.
+- **Ph.D. in Machine Learning (cotutelle)**, University of Poitiers & NTNU, 2022–present.
+- **Engineering studies in Computer Science**, 2018–2022.
 
-## Research experience
+## Research positions
 
-* **Doctoral Researcher, REALISME Project** — University of Poitiers & NTNU, 2022 – present  
-  Lead the development of multimodal datasets and deep learning pipelines for evaluating visual comfort in augmented reality. Coordinate experimentation across French and Norwegian laboratories and supervise student projects on perceptual studies.
-* **Machine Learning Researcher, Medical Imaging Collaborations** — 2023 – present  
-  Design transformer-based architectures for automatic grading of knee osteoarthritis severity. Responsible for benchmarking across public radiographic datasets and aligning outputs with clinical decision workflows.
+- **Doctoral Researcher**, XLIM (University of Poitiers) & Colourlab/NTNU, 2022–present.
+  - Subjective and objective quality assessment for AR.
+  - Blind image quality metrics using efficient transformer architectures.
+  - Cross-lab experimental design and reproducible evaluation pipelines.
 
-## Technical skills
-
-* Machine learning: deep representation learning, transformer architectures, domain adaptation.
-* Computer vision: perceptual quality assessment, radiographic image analysis, 3D/AR rendering pipelines.
-* Tooling: Python, PyTorch, TensorFlow, OpenCV, Docker, Git, experiment tracking with Weights & Biases.
+- **Researcher in Medical Imaging AI**, collaborative projects, 2022–present.
+  - Knee osteoarthritis severity grading from radiographic imaging.
+  - Domain adaptation and localization-aware transformer modeling.
 
 ## Publications
 
@@ -39,19 +35,16 @@ Doctoral researcher focusing on machine learning for perceptual quality assessme
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
-## Talks
+## Professional links
 
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html  %}
-{% endfor %}</ul>
+- Google Scholar: <a href="https://scholar.google.com/citations?user=n70fgO4AAAAJ">profile</a>
+- ORCID: <a href="https://orcid.org/0000-0002-0958-9478">0000-0002-0958-9478</a>
+- ResearchGate: <a href="https://www.researchgate.net/profile/Aymen-Sekhri">Aymen Sekhri</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/aymensekhri1/">aymensekhri1</a>
 
-## Teaching
+## Research interests
 
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
-
-## Service and outreach
-
-* Reviewer for IEEE conferences and journals in multimedia signal processing.
-* Mentor for student-led projects exploring augmented reality and medical imaging applications of AI.
+- Blind/no-reference image quality assessment
+- Augmented and mixed reality visual experience modeling
+- Transformer architectures for perceptual AI
+- Medical imaging analysis and trustworthy computer vision
