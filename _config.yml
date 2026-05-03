@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Aymen Sekhri – Machine Learning Researcher"
+title                    : "Aymen Sekhri – PhD Researcher"
 title_separator          : "-"
 name                     : &name "Aymen SEKHRI"
-description              : &description "Ph.D. candidate working on machine learning for medical imaging and immersive media"
+description              : &description "Ph.D. researcher in machine learning for augmented reality quality assessment and medical imaging"
 url                      : https://aymense.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "AymenSe/aymense.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Aymen SEKHRI"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in machine learning for medical imaging and immersive media"
+  bio              : "Ph.D. researcher in machine learning, computer vision, and perceptual AI"
   location         : "Poitiers, France & Gjøvik, Norway" # example: "Gjøvik, Norway"
   employer         : "University of Poitiers & NTNU (cotutelle)" # example: "Norwegian University of Science and Technology"
   uri              : "https://aymense.github.io" # example: "https://www.ntnu.edu/employees/aymens"

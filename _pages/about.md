@@ -6,65 +6,47 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="landing-hero">
-  <p class="landing-hero__lead">Ph.D. candidate in machine learning · University of Poitiers & NTNU</p>
-  <p class="landing-hero__description">
-    I design trustworthy computer vision systems for immersive media and clinical imaging, bridging perceptual studies with deep learning models.
-  </p>
-  <div class="landing-hero__actions">
-    <a class="btn btn--large" href="{{ '/publications/' | relative_url }}">Explore publications</a>
-    <a class="btn btn--outline btn--large" href="{{ '/cv/' | relative_url }}">View CV</a>
-  </div>
-</div>
 
-## Research focus
+## Aymen Sekhri
 
-- Machine learning for perceptual image and video quality, with an emphasis on augmented and mixed reality scenarios.
-- Deep neural architectures for medical imaging diagnostics, particularly localisation-aware models for musculoskeletal health.
-- Human-centric evaluation pipelines that connect subjective experiments with reproducible computational metrics.
+Ph.D. candidate in machine learning (cotutelle) at **University of Poitiers (France)** and **NTNU (Norway)**.
 
-## Latest publications
+My research sits at the intersection of **computer vision**, **augmented reality**, and **medical imaging**. I develop learning-based methods that connect **human visual perception** with **objective image quality assessment**, with a focus on immersive AR experiences and clinically relevant imaging workflows.
+
+## Current PhD research
+
+- **AR visual quality assessment:** building blind/no-reference quality metrics for augmented reality content.
+- **Perceptual modeling:** designing lightweight transformer models guided by human ranking feedback.
+- **Reliable AI for imaging:** improving interpretability and robustness for medical imaging tasks, including knee osteoarthritis severity grading.
+
+## Academic affiliations
+
+- **Université de Poitiers**, XLIM Laboratory, France.
+- **Norwegian University of Science and Technology (NTNU)**, Colourlab / Department of Computer Science, Gjøvik, Norway.
+
+## Selected publications
 
 {% assign recent_publications = site.publications | sort: 'date' | reverse %}
 <ul class="publication-list">
-  {% for pub in recent_publications limit: 3 %}
+  {% for pub in recent_publications limit: 6 %}
     <li>{% include publication-card.html entry=pub %}</li>
   {% endfor %}
 </ul>
 
-<p><a class="publication-card__link" href="{{ '/publications/' | relative_url }}">Complete list of publications →</a></p>
+[Full publication list →]({{ '/publications/' | relative_url }})
 
-## Research highlights
+## Research themes and contributions
 
-<div class="project-grid">
-  {% for project in site.data.projects %}
-    <article class="project-card">
-      <h3 class="project-card__title">{{ project.title }}</h3>
-      <p class="project-card__role">{{ project.role }} · {{ project.period }}</p>
-      <p>{{ project.description }}</p>
-      {% if project.highlights %}
-        <ul class="project-card__highlights">
-          {% for item in project.highlights %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </article>
-  {% endfor %}
-</div>
+### Immersive media and AR quality
+- Proposed AR-focused blind IQA approaches (including ARaBIQA and transformer-based lightweight metrics).
+- Worked on model distillation strategies to improve efficiency while preserving perceptual performance.
 
-## News
-
-{% assign news_items = site.data.news | sort: 'date' | reverse %}
-<ul class="news-feed">
-  {% for item in news_items limit: 4 %}
-    <li class="news-feed__item">
-      <span class="news-feed__date">{{ item.date | date: "%b %Y" }}</span>
-      <span>{{ item.text | markdownify | strip_html }}</span>
-    </li>
-  {% endfor %}
-</ul>
+### Medical imaging AI
+- Developed Swin Transformer-based systems for automated knee osteoarthritis assessment.
+- Explored domain adaptation and localization-aware modeling in clinically oriented computer vision pipelines.
 
 ## Collaboration
 
-I am co-advised by <a href="https://xlim-sic.labo.univ-poitiers.fr/larabi/" rel="noopener" target="_blank">Mohamed-Chaker Larabi</a> and <a href="https://www.ntnu.edu/employees/s.ali.amirshahi" rel="noopener" target="_blank">Seyed Ali Amirshahi</a> and supported by the Nouvelle-Aquitaine Research Council through the REALISME project. I welcome collaborations on perceptual quality assessment, radiology decision support, and applied machine learning for immersive media. Feel free to reach out at <a href="mailto:aymen.sekhri@univ-poitiers.fr">aymen.sekhri@univ-poitiers.fr</a>.
+I am co-advised by **Prof. Mohamed-Chaker Larabi** and **Prof. Seyed Ali Amirshahi**. I welcome collaborations in AR/VR quality assessment, perceptual modeling, and applied machine learning for medical imaging.
+
+Contact: <a href="mailto:aymen.sekhri@univ-poitiers.fr">aymen.sekhri@univ-poitiers.fr</a>
