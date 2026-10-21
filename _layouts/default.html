@@ -3,11 +3,13 @@
 {% include head.html %}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <canvas class="neural-bg" aria-hidden="true"></canvas>
   {% include header.html %}
   <main id="main" class="wrap">
     {{ content }}
   </main>
   {% include footer.html %}
+  <script src="{{ '/assets/js/neural-bg.js' | relative_url }}" defer></script>
   <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 </body>
 </html>

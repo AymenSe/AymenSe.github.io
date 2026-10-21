@@ -10,7 +10,7 @@ redirect_from:
 
 <section class="intro">
   <div>
-    <h1 class="intro__name">Aymen Sekhri</h1>
+    <h1 class="intro__name">{% include logo.html %}<span>Aymen Sekhri</span></h1>
     <p class="intro__role">
       PhD researcher in machine learning and computer vision.<br>
       Cotutelle between <strong>XLIM, University of Poitiers</strong> and <strong>Colourlab, NTNU</strong>.

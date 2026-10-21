@@ -8,6 +8,7 @@
 :root {
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --bg:          #fcfcfb;
   --bg-raised:   #ffffff;
@@ -19,6 +20,12 @@
   --border-firm: #d2d2cd;
   --accent:      #3b4fd8;
   --accent-soft: #eceefc;
+
+  /* Background node graph. Read from JS — keep the names in sync with
+     assets/js/neural-bg.js. Lower the alphas to calm it down. */
+  --net-node: rgba(59, 79, 216, .34);
+  --net-line: rgba(59, 79, 216, .20);
+  --net-glow: rgba(59, 79, 216, .50);
 
   --wrap:   46rem;
   --radius: 10px;
@@ -42,6 +49,10 @@
     --border-firm: #35353e;
     --accent:      #8c9bff;
     --accent-soft: #1c1f3a;
+
+    --net-node: rgba(140, 155, 255, .40);
+    --net-line: rgba(140, 155, 255, .22);
+    --net-glow: rgba(140, 155, 255, .62);
   }
 }
 
@@ -56,6 +67,10 @@
   --border-firm: #35353e;
   --accent:      #8c9bff;
   --accent-soft: #1c1f3a;
+
+  --net-node: rgba(140, 155, 255, .40);
+  --net-line: rgba(140, 155, 255, .22);
+  --net-glow: rgba(140, 155, 255, .62);
 }
 
 /* ==========================================================================
@@ -67,6 +82,9 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* The page colour lives here, not on body, so the node-graph canvas can
+     sit above it and below the content. */
+  background: var(--bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -76,7 +94,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: var(--step-0);
@@ -86,6 +104,23 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* ==========================================================================
+   Background node graph
+   ========================================================================== */
+
+.neural-bg {
+  position: fixed;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Everything else stacks above the canvas. */
+.site-header, main.wrap, .site-footer { position: relative; z-index: 1; }
 
 .wrap {
   width: 100%;
@@ -160,6 +195,29 @@ pre code { background: none; padding: 0; }
   display: block;
 }
 
+/* Crescent and star, abstracted from the Algerian flag. The arc is drawn
+   monoline to match .icon; the star is filled so it still reads at 20px. */
+.logo {
+  width: 1em;
+  height: 1em;
+  display: block;
+  flex: none;
+  overflow: visible;
+  color: var(--accent);
+}
+
+.logo__crescent {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.logo__star {
+  fill: currentColor;
+  stroke: none;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -181,13 +239,22 @@ pre code { background: none; padding: 0; }
 }
 
 .site-header__name {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   color: var(--text);
   margin-right: auto;
   white-space: nowrap;
 }
 .site-header__name:hover { text-decoration: none; color: var(--accent); }
+.site-header__name .logo {
+  font-size: 1.25em;
+  transition: transform .4s cubic-bezier(.2, .8, .3, 1);
+}
+.site-header__name:hover .logo { transform: rotate(-12deg) scale(1.06); }
 
 .site-nav {
   display: flex;
@@ -272,9 +339,10 @@ pre code { background: none; padding: 0; }
 .page-head { margin-bottom: 2.5rem; }
 
 .page-head__title {
+  font-family: var(--font-display);
   font-size: var(--step-2);
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   line-height: 1.2;
   margin: 0;
 }
@@ -359,12 +427,18 @@ pre code { background: none; padding: 0; }
 }
 
 .intro__name {
+  display: flex;
+  align-items: center;
+  gap: .45em;
+  font-family: var(--font-display);
   font-size: var(--step-3);
   font-weight: 600;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
   line-height: 1.08;
   margin: 0 0 .75rem;
 }
+
+.intro__name .logo { font-size: .78em; }
 
 .intro__role {
   margin: 0 0 1.25rem;
@@ -814,8 +888,10 @@ a.card:hover .card__title .icon { color: var(--accent); }
    ========================================================================== */
 
 @media print {
-  .site-header, .site-footer, .filters, .theme-toggle, .skip-link { display: none !important; }
-  body { background: #fff; color: #000; font-size: 10.5pt; }
+  .site-header, .site-footer, .filters, .theme-toggle, .skip-link,
+  .neural-bg { display: none !important; }
+  html, body { background: #fff; color: #000; }
+  body { font-size: 10.5pt; }
   main.wrap { padding: 0; max-width: none; }
   .pub { break-inside: avoid; }
   a { color: #000; text-decoration: none; }
