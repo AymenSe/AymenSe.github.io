@@ -1,0 +1,30 @@
+# Externally hosted articles. Local posts live in _posts/ and are listed alongside these.
+- title: "Don't wait for university to learn AI, you can start now for FREE"
+  date: 2021-08-26
+  venue: "Analytics Vidhya"
+  url: "https://medium.com/analytics-vidhya/dont-wait-for-university-to-learn-ai-you-can-start-now-for-free-3141cfb7a61d"
+  description: "Where to find high-quality, free AI coursework from top universities — and why a basic maths background is enough to start."
+
+- title: "Image and Video Processing: From Mars to Hollywood with a Stop at the Hospital"
+  date: 2021-05-18
+  venue: "Analytics Vidhya"
+  url: "https://medium.com/analytics-vidhya/image-and-video-processing-from-mars-to-hollywood-with-a-stop-at-the-hospital-week-1-review-c1478eb4b2ef"
+  description: "A walkthrough of the core concepts of digital image processing, from the first week of Duke's course."
+
+- title: "Every ML enthusiast should know these seven steps of the machine learning process"
+  date: 2020-10-25
+  venue: "Analytics Vidhya"
+  url: "https://medium.com/analytics-vidhya/every-ml-enthusiast-should-know-these-seven-steps-of-the-machine-learning-process-7d3e71c8df1a"
+  description: "The end-to-end pipeline that turns a real-world problem into a trained, evaluated model."
+
+- title: "Throughput versus bandwidth, in brief"
+  date: 2020-05-23
+  venue: "Analytics Vidhya"
+  url: "https://medium.com/analytics-vidhya/throughput-versus-bandwidth-in-brief-cff52313f87"
+  description: "Two network metrics that get conflated constantly — what actually separates them."
+
+- title: "Five ways to choose the right variables to build the right models"
+  date: 2020-04-30
+  venue: "Analytics Vidhya"
+  url: "https://medium.com/analytics-vidhya/five-ways-to-choose-the-right-variables-to-build-the-right-models-4827f86f1583"
+  description: "Feature selection strategies, and how to tell which one your problem calls for."

@@ -1,10 +1,14 @@
-# main links links
-main:
-  - title: "Research"
-    url: /
+- title: "About"
+  url: /
 
-  - title: "Publications"
-    url: /publications/
+- title: "Publications"
+  url: /publications/
 
-  - title: "CV"
-    url: /cv/
+- title: "Projects"
+  url: /projects/
+
+- title: "Writing"
+  url: /blog/
+
+- title: "CV"
+  url: /cv/

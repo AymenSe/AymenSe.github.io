@@ -1,0 +1,19 @@
+{%- assign n = include.name -%}
+{%- case n -%}
+{%- when 'mail' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6.5 9 6 9-6"/></svg>
+{%- when 'scholar' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1.5 8.6 12 14.2l10.5-5.6L12 3Z"/><path d="M5.5 11v4.4c0 2 2.9 3.6 6.5 3.6s6.5-1.6 6.5-3.6V11"/></svg>
+{%- when 'github' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.2 20.4c-4 1.2-4-2.1-5.6-2.5m11.2 4.6v-3.2c0-.9.1-1.3-.4-1.8 2.4-.3 4.8-1.2 4.8-5.2a4 4 0 0 0-1.1-2.8 3.7 3.7 0 0 0-.1-2.8s-.9-.3-3 1.1a10.3 10.3 0 0 0-5.3 0C7.6 6.4 6.7 6.7 6.7 6.7a3.7 3.7 0 0 0-.1 2.8 4 4 0 0 0-1.1 2.8c0 4 2.4 4.9 4.8 5.2-.4.5-.4 1-.4 1.6v3.4"/></svg>
+{%- when 'linkedin' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="2.8" width="18.4" height="18.4" rx="3"/><path d="M7.2 10.2v7M7.2 7.1v.1M11.4 17.2v-4a2.3 2.3 0 0 1 4.6 0v4M11.4 10.2v7"/></svg>
+{%- when 'orcid' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M8.4 9.1v7M8.4 6.6v.1M11.9 16.1V9.1h1.9a3.5 3.5 0 0 1 0 7h-1.9Z"/></svg>
+{%- when 'medium' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="6.6" cy="12" rx="4.1" ry="6.4"/><ellipse cx="15.4" cy="12" rx="1.9" ry="6.4"/><ellipse cx="20.6" cy="12" rx=".8" ry="6.4"/></svg>
+{%- when 'arrow' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12.5 6.5 19 12l-6.5 5.5"/></svg>
+{%- when 'external' -%}
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14.5V19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 19V8a1.5 1.5 0 0 1 1.5-1.5H10"/></svg>
+{%- endcase -%}

@@ -1,0 +1,24 @@
+{%- assign p = include.p -%}
+<li class="pub" data-year="{{ p.date | date: '%Y' }}" data-type="{{ p.type }}" data-topics="{{ p.topics | join: ' ' }}">
+  <div class="pub__year"><time datetime="{{ p.date | date: '%Y' }}">{{ p.date | date: "%Y" }}</time></div>
+
+  <div class="pub__body">
+    <h3 class="pub__title"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+
+    <p class="pub__authors">{{ p.authors | replace: 'A. Sekhri', '<strong>A. Sekhri</strong>' }}</p>
+
+    <p class="pub__venue">
+      <span class="tag tag--{{ p.type | default: 'conference' }}">{{ p.type | default: 'conference' }}</span>
+      <span>{{ p.venue }}</span>
+    </p>
+
+    {% include pub-links.html p=p %}
+
+    {% if include.abstract and p.content != '' %}
+    <details class="pub__abstract">
+      <summary>Abstract</summary>
+      <div class="prose prose--tight">{{ p.content }}</div>
+    </details>
+    {% endif %}
+  </div>
+</li>

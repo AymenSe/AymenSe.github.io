@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="pub-page">
+  <p class="eyebrow"><a href="{{ '/publications/' | relative_url }}">← All publications</a></p>
+
+  <h1 class="page-head__title">{{ page.title }}</h1>
+
+  <p class="pub-page__authors">{{ page.authors }}</p>
+  <p class="pub-page__venue">
+    <span class="tag tag--{{ page.type | default: 'conference' }}">{{ page.type | default: 'conference' }}</span>
+    {{ page.venue }} · {{ page.date | date: "%Y" }}
+  </p>
+
+  {% include pub-links.html p=page %}
+
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.bibtex %}
+  <details class="bibtex">
+    <summary>BibTeX</summary>
+    <pre><code>{{ page.bibtex }}</code></pre>
+  </details>
+  {% endif %}
+</article>

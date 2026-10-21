@@ -1,0 +1,21 @@
+{%- assign p = include.p -%}
+<p class="pub-links">
+  {%- if p.pdf -%}
+    <a class="pub-links__item" href="{{ p.pdf | relative_url }}">PDF</a>
+  {%- endif -%}
+  {%- if p.arxiv -%}
+    <a class="pub-links__item" href="https://arxiv.org/abs/{{ p.arxiv }}" rel="noopener" target="_blank">arXiv</a>
+  {%- endif -%}
+  {%- if p.doi -%}
+    <a class="pub-links__item" href="https://doi.org/{{ p.doi }}" rel="noopener" target="_blank">DOI</a>
+  {%- endif -%}
+  {%- if p.url_external -%}
+    <a class="pub-links__item" href="{{ p.url_external }}" rel="noopener" target="_blank">Publisher</a>
+  {%- endif -%}
+  {%- if p.code -%}
+    <a class="pub-links__item" href="{{ p.code }}" rel="noopener" target="_blank">Code</a>
+  {%- endif -%}
+  {%- if p.dataset -%}
+    <a class="pub-links__item" href="{{ p.dataset }}" rel="noopener" target="_blank">Dataset</a>
+  {%- endif -%}
+</p>

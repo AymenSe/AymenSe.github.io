@@ -1,0 +1,10 @@
+<ul class="social" aria-label="Elsewhere">
+  {% for l in site.links %}
+    <li>
+      <a href="{{ l.url }}" title="{{ l.name }}" aria-label="{{ l.name }}"
+         {% if l.url contains '://' %}rel="noopener me" target="_blank"{% endif %}>
+        {% include icon.html name=l.icon %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

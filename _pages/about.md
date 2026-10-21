@@ -1,52 +1,79 @@
 ---
+layout: home
 permalink: /
-title: "Aymen Sekhri"
-author_profile: true
+title: "About"
+description: "PhD researcher working on perceptual image quality assessment for augmented reality and trustworthy computer vision for medical imaging."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-## Aymen Sekhri
+<section class="intro">
+  <div>
+    <h1 class="intro__name">Aymen Sekhri</h1>
+    <p class="intro__role">
+      PhD researcher in machine learning and computer vision.<br>
+      Cotutelle between <strong>XLIM, University of Poitiers</strong> and <strong>Colourlab, NTNU</strong>.
+    </p>
+    {% include social-links.html %}
+  </div>
+  <img class="intro__photo" src="{{ site.author.avatar | relative_url }}" alt="Aymen Sekhri" width="120" height="120">
+</section>
 
-Ph.D. candidate in machine learning (cotutelle) at **University of Poitiers (France)** and **NTNU (Norway)**.
+<p class="lead">
+I build models that measure what people actually see. My work sits between
+<strong>perceptual science</strong> and <strong>efficient deep learning</strong>: image quality
+metrics for augmented reality, and trustworthy computer vision for medical imaging.
+</p>
 
-My research sits at the intersection of **computer vision**, **augmented reality**, and **medical imaging**. I develop learning-based methods that connect **human visual perception** with **objective image quality assessment**, with a focus on immersive AR experiences and clinically relevant imaging workflows.
+Augmented reality breaks most of the assumptions image quality metrics are built on. The
+viewport is a composite — a captured real scene underneath, a rendered virtual layer on
+top — and the two interfere perceptually in a way that no reference image can describe.
+I work on blind metrics that handle this directly, and on making them small enough to run
+on the device doing the rendering.
 
-## Current PhD research
+The same question shows up in medical imaging from the other side: when a model's output
+feeds a diagnosis, you need to know which local structures it is actually looking at.
 
-- **AR visual quality assessment:** building blind/no-reference quality metrics for augmented reality content.
-- **Perceptual modeling:** designing lightweight transformer models guided by human ranking feedback.
-- **Reliable AI for imaging:** improving interpretability and robustness for medical imaging tasks, including knee osteoarthritis severity grading.
+## Research directions
 
-## Academic affiliations
+- **Blind quality assessment for AR** — metrics for composited real/virtual content, including the distortions and visual confusion unique to immersive pipelines.
+- **Perceptual supervision** — training on human ranking feedback rather than absolute scores, because that is what observers are consistent at.
+- **Efficient perceptual models** — knowledge distillation and compact transformers that keep perceptual accuracy at a fraction of the compute.
+- **Trustworthy medical imaging AI** — localisation-aware architectures and domain adaptation for radiographic severity grading.
 
-- **Université de Poitiers**, XLIM Laboratory, France.
-- **Norwegian University of Science and Technology (NTNU)**, Colourlab / Department of Computer Science, Gjøvik, Norway.
+<div class="section-head">
+  <h2>Selected publications</h2>
+  <a href="{{ '/publications/' | relative_url }}">All {{ site.publications | size }} →</a>
+</div>
 
-## Selected publications
-
-{% assign recent_publications = site.publications | sort: 'date' | reverse %}
-<ul class="publication-list">
-  {% for pub in recent_publications limit: 6 %}
-    <li>{% include publication-card.html entry=pub %}</li>
+{% assign selected = site.publications | sort: 'date' | reverse %}
+<ul class="pub-list">
+  {% for p in selected limit: 5 %}
+    {% include pub-item.html p=p %}
   {% endfor %}
 </ul>
 
-[Full publication list →]({{ '/publications/' | relative_url }})
+<div class="section-head">
+  <h2>News</h2>
+</div>
 
-## Research themes and contributions
+<ul class="news">
+  {% for item in site.data.news limit: 5 %}
+    <li>
+      <time datetime="{{ item.date }}">{{ item.date | append: '-01' | date: "%b %Y" }}</time>
+      <p>{{ item.text }}</p>
+    </li>
+  {% endfor %}
+</ul>
 
-### Immersive media and AR quality
-- Proposed AR-focused blind IQA approaches (including ARaBIQA and transformer-based lightweight metrics).
-- Worked on model distillation strategies to improve efficiency while preserving perceptual performance.
+<div class="section-head">
+  <h2>Get in touch</h2>
+</div>
 
-### Medical imaging AI
-- Developed Swin Transformer-based systems for automated knee osteoarthritis assessment.
-- Explored domain adaptation and localization-aware modeling in clinically oriented computer vision pipelines.
+I am co-advised by **Prof. Mohamed-Chaker Larabi** (University of Poitiers) and
+**Prof. Seyed Ali Amirshahi** (NTNU). I am happy to hear from anyone working on AR/VR
+quality, perceptual modelling, or applied machine learning for medical imaging —
+collaborations, reviews, or just a question about one of the papers.
 
-## Collaboration
-
-I am co-advised by **Prof. Mohamed-Chaker Larabi** and **Prof. Seyed Ali Amirshahi**. I welcome collaborations in AR/VR quality assessment, perceptual modeling, and applied machine learning for medical imaging.
-
-Contact: <a href="mailto:aymen.sekhri@univ-poitiers.fr">aymen.sekhri@univ-poitiers.fr</a>
+<a class="pub-links__item" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>

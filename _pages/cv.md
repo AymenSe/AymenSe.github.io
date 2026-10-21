@@ -1,50 +1,84 @@
 ---
-layout: archive
-title: "CV"
+layout: page
 permalink: /cv/
-author_profile: true
+title: "CV"
+subtitle: "PhD researcher in machine learning and computer vision, Poitiers & Gjøvik."
+description: "Curriculum vitae of Aymen Sekhri — education, research positions, publications and research interests."
 redirect_from:
-  - /resume
+  - /resume/
 ---
-
-{% include base_path %}
-
-## Profile
-
-Ph.D. researcher in machine learning and computer vision, working in cotutelle between the University of Poitiers and NTNU. My work focuses on perceptual quality assessment for augmented reality and trustworthy AI models for medical imaging.
 
 ## Education
 
-- **Ph.D. in Machine Learning (cotutelle)**, University of Poitiers & NTNU, 2022–present.
-- **Engineering studies in Computer Science**, 2018–2022.
+<ul class="timeline">
+  <li>
+    <span class="timeline__when">2023 – 2026</span>
+    <div>
+      <p class="timeline__what">PhD in Computer Science (cotutelle)</p>
+      <p class="timeline__where">University of Poitiers, France · NTNU, Norway</p>
+      <ul>
+        <li>Perceptual quality assessment for augmented reality.</li>
+        <li>Advisors: Prof. Mohamed-Chaker Larabi and Prof. Seyed Ali Amirshahi.</li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <span class="timeline__when">until 2022</span>
+    <div>
+      <p class="timeline__what">Engineering studies in Computer Science</p>
+      <p class="timeline__where">Specialisation in machine learning and computer vision</p>
+    </div>
+  </li>
+</ul>
 
-## Research positions
+## Research
 
-- **Doctoral Researcher**, XLIM (University of Poitiers) & Colourlab/NTNU, 2022–present.
-  - Subjective and objective quality assessment for AR.
-  - Blind image quality metrics using efficient transformer architectures.
-  - Cross-lab experimental design and reproducible evaluation pipelines.
-
-- **Researcher in Medical Imaging AI**, collaborative projects, 2022–present.
-  - Knee osteoarthritis severity grading from radiographic imaging.
-  - Domain adaptation and localization-aware transformer modeling.
-
-## Publications
-
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
-
-## Professional links
-
-- Google Scholar: <a href="https://scholar.google.com/citations?user=n70fgO4AAAAJ">profile</a>
-- ORCID: <a href="https://orcid.org/0000-0002-0958-9478">0000-0002-0958-9478</a>
-- ResearchGate: <a href="https://www.researchgate.net/profile/Aymen-Sekhri">Aymen Sekhri</a>
-- LinkedIn: <a href="https://www.linkedin.com/in/aymensekhri1/">aymensekhri1</a>
+<ul class="timeline">
+  <li>
+    <span class="timeline__when">2023 – present</span>
+    <div>
+      <p class="timeline__what">Doctoral researcher</p>
+      <p class="timeline__where">XLIM, University of Poitiers · Colourlab, NTNU Gjøvik</p>
+      <ul>
+        <li>Subjective and objective quality assessment for augmented reality, including the ARIQA-3DS stereoscopic dataset and its 36-participant HMD study.</li>
+        <li>Blind image quality metrics built on efficient transformer architectures.</li>
+        <li>Cross-laboratory experimental design and reproducible evaluation pipelines.</li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <span class="timeline__when">2022 – 2024</span>
+    <div>
+      <p class="timeline__what">Medical imaging AI — collaborative projects</p>
+      <p class="timeline__where">With Université d'Orléans (PRISME) and partners</p>
+      <ul>
+        <li>Knee osteoarthritis severity grading from radiographs with Swin Transformers.</li>
+        <li>Domain adaptation and localisation-aware modelling for clinical computer vision.</li>
+      </ul>
+    </div>
+  </li>
+</ul>
 
 ## Research interests
 
-- Blind/no-reference image quality assessment
-- Augmented and mixed reality visual experience modeling
-- Transformer architectures for perceptual AI
-- Medical imaging analysis and trustworthy computer vision
+- Blind / no-reference image quality assessment
+- Augmented and mixed reality visual experience modelling
+- Transformer architectures and distillation for perceptual AI
+- Medical image analysis and trustworthy computer vision
+
+## Publications
+
+{% assign pubs = site.publications | sort: 'date' | reverse %}
+<ul class="pub-list">
+  {% for p in pubs %}
+    {% include pub-item.html p=p %}
+  {% endfor %}
+</ul>
+
+## Profiles
+
+- **Google Scholar** — <a href="https://scholar.google.com/citations?user=n70fgO4AAAAJ" rel="noopener" target="_blank">citations and metrics</a>
+- **ORCID** — <a href="https://orcid.org/0000-0002-0958-9478" rel="noopener" target="_blank">0000-0002-0958-9478</a>
+- **ResearchGate** — <a href="https://www.researchgate.net/profile/Aymen-Sekhri" rel="noopener" target="_blank">Aymen Sekhri</a>
+- **GitHub** — <a href="https://github.com/AymenSe" rel="noopener" target="_blank">AymenSe</a>
+- **LinkedIn** — <a href="https://www.linkedin.com/in/aymensekhri1/" rel="noopener" target="_blank">aymensekhri1</a>

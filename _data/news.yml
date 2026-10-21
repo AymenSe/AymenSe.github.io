@@ -1,8 +1,15 @@
-- date: 2024-09-01
-  text: "Presenting our EUSIPCO 2024 paper on local feature refinement for knee osteoarthritis analysis."
-- date: 2024-01-15
-  text: "Published a book chapter on verifying the trustworthiness of digital imagery in *Digital Image Security*."
-- date: 2023-07-15
-  text: "Shared our Swin Transformer framework for automatic knee osteoarthritis grading at CBMI 2023."
-- date: 2022-10-20
-  text: "Presented our domain adaptation approach for medical image quality assessment at ICIP 2022."
+# Newest first. `text` accepts inline Markdown-free HTML (<strong>, <a>, <em>).
+- date: 2026-09
+  text: '<strong>ICIP 2026</strong> — presenting <em>When Restoration Becomes the Reference</em>, on reusing full-reference IQA metrics in blind settings.'
+
+- date: 2026-04
+  text: '<strong>ARIQA-3DS</strong> is out — the first large stereoscopic AR image quality dataset, 1,200 viewports rated by 36 participants in a video see-through HMD.'
+
+- date: 2026-01
+  text: 'Our knowledge-distillation work on AR image quality is accepted at <strong>IEEE TCSVT</strong>, and <strong>TransformAR</strong> appears in <em>Signal Processing: Image Communication</em>.'
+
+- date: 2025-09
+  text: '<strong>ARaBIQA</strong> presented at ICIP 2025 — a blind quality model built around AR-specific distortions.'
+
+- date: 2025-04
+  text: 'Ranking-guided lightweight quality prediction presented at <strong>ICASSP 2025</strong>.'

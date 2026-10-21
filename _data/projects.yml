@@ -1,14 +1,61 @@
-- title: "REALISME – Perceptual Quality for Augmented Reality"
-  role: "Doctoral researcher"
-  period: "2022 – present"
-  description: "Developing learning-based quality assessment pipelines that connect objective metrics with human perception in augmented reality scenarios."
-  highlights:
-    - "Designing subjective and objective protocols that span indoor and outdoor mixed-reality capture."
-    - "Bridging expertise from the University of Poitiers and NTNU to deliver cross-laboratory validation."
-- title: "Automated Knee Osteoarthritis Assessment"
-  role: "Lead author"
-  period: "2023 – present"
-  description: "Building transformer architectures that localise clinically salient biomarkers in radiographic images to support early-stage diagnosis."
-  highlights:
-    - "Introduced localisation-aware Swin Transformer variants for robust multi-dataset training."
-    - "Collaborating with clinical partners to align predictions with Kellgren–Lawrence grading." 
+- title: "ARIQA-3DS — stereoscopic AR quality dataset"
+  period: "2025 – 2026"
+  description: >-
+    The first large stereoscopic AR image quality dataset: 1,200 viewports that fuse
+    high-resolution stereoscopic omnidirectional captures of real scenes with augmented
+    foregrounds under controlled transparency and degradation.
+  points:
+    - "Subjective study with 36 participants on a video see-through head-mounted display."
+    - "Collects both quality ratings and simulator-sickness indicators."
+    - "Released publicly as a benchmark for next-generation AR quality models."
+  tags: [AR, dataset, subjective study]
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2604.03112"
+
+- title: "TransformAR — lightweight AR quality metrics"
+  period: "2023 – 2026"
+  description: >-
+    A family of compact transformer metrics for augmented reality image quality —
+    TransformAR, TransformAR-KD and TransformAR-KD+ — built so that perceptual
+    accuracy survives aggressive model compression.
+  points:
+    - "Self-supervised ViT features distilled from reference to distorted images."
+    - "Cross-attention decoders over shift representations to quantify distortion."
+    - "Published at MMSP 2024, in Signal Processing: Image Communication, and in IEEE TCSVT."
+  tags: [AR, IQA, efficiency]
+  links:
+    - label: "TCSVT paper"
+      url: "https://doi.org/10.1109/tcsvt.2026.3673101"
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2412.06003"
+
+- title: "Ranking-guided quality prediction"
+  period: "2024 – 2025"
+  description: >-
+    Humans rank image pairs far more consistently than they score single images.
+    This project folds perceptual ordering feedback into the training objective of
+    lightweight quality models, improving calibration and pairwise consistency.
+  tags: [IQA, ranking, efficiency]
+  links:
+    - label: "ICASSP 2025 paper"
+      url: "https://doi.org/10.1109/icassp49660.2025.10888173"
+    - label: "Code"
+      url: "https://github.com/AymenSe/LT-QFR-ICASSP-2025"
+
+- title: "Knee osteoarthritis severity grading"
+  period: "2022 – 2024"
+  description: >-
+    Transformer architectures that localise clinically salient biomarkers in knee
+    radiographs to support Kellgren–Lawrence grading, with a localisation-aware
+    refinement module that keeps local cues discriminative at every scale.
+  points:
+    - "Swin Transformer backbone with multi-head prediction (CBMI 2023)."
+    - "Localisation-aware token refinement for robust multi-dataset training (EUSIPCO 2024)."
+    - "Domain adaptation to mitigate shift between public radiographic datasets."
+  tags: [medical imaging, transformers]
+  links:
+    - label: "Code"
+      url: "https://github.com/AymenSe/Quantification-of-Knee-Osteoarthritis-Severity-Using-Swin-Transformer"
+    - label: "EUSIPCO 2024 paper"
+      url: "https://doi.org/10.23919/eusipco63174.2024.10715114"
