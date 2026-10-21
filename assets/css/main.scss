@@ -15,11 +15,12 @@
   --bg-sunken:   #f3f3f1;
   --text:        #16161a;
   --text-muted:  #65656f;
-  --text-faint:  #8e8e98;
+  --text-faint:  #71717b;
   --border:      #e4e4e0;
   --border-firm: #d2d2cd;
   --accent:      #3b4fd8;
   --accent-soft: #eceefc;
+  --logo:        #d21034; /* Algerian flag red */
 
   /* Background node graph. Read from JS — keep the names in sync with
      assets/js/neural-bg.js. Lower the alphas to calm it down. */
@@ -44,11 +45,12 @@
     --bg-sunken:   #18181d;
     --text:        #e9e9ec;
     --text-muted:  #9b9ba6;
-    --text-faint:  #74747f;
+    --text-faint:  #7d7d88;
     --border:      #26262d;
     --border-firm: #35353e;
     --accent:      #8c9bff;
     --accent-soft: #1c1f3a;
+    --logo:        #e85a6e; /* flag red, lifted to read on near-black */
 
     --net-node: rgba(140, 155, 255, .40);
     --net-line: rgba(140, 155, 255, .22);
@@ -62,11 +64,12 @@
   --bg-sunken:   #18181d;
   --text:        #e9e9ec;
   --text-muted:  #9b9ba6;
-  --text-faint:  #74747f;
+  --text-faint:  #7d7d88;
   --border:      #26262d;
   --border-firm: #35353e;
   --accent:      #8c9bff;
   --accent-soft: #1c1f3a;
+  --logo:        #e85a6e; /* flag red, lifted to read on near-black */
 
   --net-node: rgba(140, 155, 255, .40);
   --net-line: rgba(140, 155, 255, .22);
@@ -203,7 +206,7 @@ pre code { background: none; padding: 0; }
   display: block;
   flex: none;
   overflow: visible;
-  color: var(--accent);
+  color: var(--logo);
 }
 
 .logo__crescent {

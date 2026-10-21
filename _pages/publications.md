@@ -12,6 +12,7 @@ description: "Full publication list for Aymen Sekhri — AR image quality assess
   <li><button type="button" data-filter="iqa" aria-pressed="false">Image quality</button></li>
   <li><button type="button" data-filter="medical" aria-pressed="false">Medical imaging</button></li>
   <li><button type="button" data-filter="efficiency" aria-pressed="false">Efficiency</button></li>
+  <li><button type="button" data-filter="forensics" aria-pressed="false">Forensics</button></li>
   <li><button type="button" data-filter="journal" aria-pressed="false">Journals</button></li>
 </ul>
 

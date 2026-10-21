@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <style>
-    .mark { fill: none; stroke: #3b4fd8; stroke-width: 2; stroke-linecap: round; }
-    .star { fill: #3b4fd8; stroke: none; }
+    .mark { fill: none; stroke: #d21034; stroke-width: 2; stroke-linecap: round; }
+    .star { fill: #d21034; stroke: none; }
     @media (prefers-color-scheme: dark) {
-      .mark { stroke: #8c9bff; }
-      .star { fill: #8c9bff; }
+      .mark { stroke: #e85a6e; }
+      .star { fill: #e85a6e; }
     }
   </style>
   <path class="mark" d="M14.19 6.64 A6.8 6.8 0 1 0 14.19 17.36" />

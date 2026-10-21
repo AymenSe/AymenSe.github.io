@@ -2,7 +2,8 @@
 # Site
 # ---------------------------------------------------------------------------
 title                : "Aymen Sekhri"
-tagline              : "PhD researcher — perceptual AI for augmented reality & medical imaging"
+# Kept short: it lands in the <title>, which search results truncate near 60.
+tagline              : "PhD researcher — perceptual AI & image quality"
 description          : >-
   Aymen Sekhri is a PhD researcher (cotutelle, University of Poitiers & NTNU)
   working on perceptual image quality assessment for augmented reality and
@@ -92,5 +93,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
+# /feed.xml carries blog posts (empty until _posts has something).
+# The publications feed is the one worth subscribing to, so it is what the
+# footer and the <link rel="alternate"> point at.
 feed:
   path: /feed.xml
+  collections:
+    publications:
+      path: /publications.xml
