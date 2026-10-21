@@ -24,9 +24,9 @@
 
   /* Background node graph. Read from JS — keep the names in sync with
      assets/js/neural-bg.js. Lower the alphas to calm it down. */
-  --net-node: rgba(59, 79, 216, .34);
-  --net-line: rgba(59, 79, 216, .20);
-  --net-glow: rgba(59, 79, 216, .50);
+  --net-node: rgba(0, 122, 64, .55);
+  --net-line: rgba(0, 122, 64, .34);
+  --net-glow: rgba(0, 122, 64, .70);
 
   --wrap:   46rem;
   --radius: 10px;
@@ -52,9 +52,9 @@
     --accent-soft: #1c1f3a;
     --logo:        #e85a6e; /* flag red, lifted to read on near-black */
 
-    --net-node: rgba(140, 155, 255, .40);
-    --net-line: rgba(140, 155, 255, .22);
-    --net-glow: rgba(140, 155, 255, .62);
+    --net-node: rgba(74, 200, 140, .42);
+    --net-line: rgba(74, 200, 140, .24);
+    --net-glow: rgba(74, 200, 140, .64);
   }
 }
 
@@ -71,9 +71,9 @@
   --accent-soft: #1c1f3a;
   --logo:        #e85a6e; /* flag red, lifted to read on near-black */
 
-  --net-node: rgba(140, 155, 255, .40);
-  --net-line: rgba(140, 155, 255, .22);
-  --net-glow: rgba(140, 155, 255, .62);
+  --net-node: rgba(74, 200, 140, .42);
+  --net-line: rgba(74, 200, 140, .24);
+  --net-glow: rgba(74, 200, 140, .64);
 }
 
 /* ==========================================================================
